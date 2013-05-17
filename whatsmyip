@@ -1,0 +1,6 @@
+#!/bin/bash
+
+# http://stackoverflow.com/questions/4683481/what-are-good-services-for-checking-the-external-ip-of-a-machine
+
+curl -s http://checkip.dyndns.org |sed 's/[a-zA-Z/<> :]//g'
+#curl http://icanhazip.com
